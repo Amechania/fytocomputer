@@ -108,5 +108,7 @@ async def status(ctx):
 
     await ctx.send(custom_message)
 
+# Get the token
+token = open("token.env", "r").read()
 # Run the bot with your token
-bot.run('MTE1NDQ1MzA2NDYyODA0Nzg5Mg.GUTwA9.cl8dk9E85sqQ6R-ovwxWf1odEuiel0fnCBJTD8')
+bot.run(token)
