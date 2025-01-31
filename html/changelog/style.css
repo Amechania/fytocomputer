@@ -1,0 +1,78 @@
+div.change {
+	padding-left: 20px;
+}
+div.bullets {
+	padding-left: 10px;
+}
+p.italics {
+	padding-left: 30px;
+	font-style: italic
+}
+.passing-wave {
+	padding-top: 5px;
+	display: inline;
+	font-size: 45px;
+	background: linear-gradient(60deg,red, orange, orange, yellow, yellow, green, green, blue, blue, purple, purple, red);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	background-size: 200% auto;
+	animation: wave 2s linear infinite;
+}
+
+@keyframes wave {
+	0% { background-position: 0 0; }
+	100% { background-position: 200% 0; }
+}
+
+body {
+	margin: 0;
+	overflow: hidden;
+	font-size:14px;
+	background-color: 171717;
+	color: c4c4c4
+}
+
+#cat {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-image: url('cat.png'); /* Replace 'cat.png' with the path to your cute cat image */
+	background-size: cover;
+	border-radius: 50%;
+	pointer-events: none;
+	transition: transform 0.2s ease;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #c4c4c4;
+	margin: 10px 0;
+}
+
+/* Flex container to hold both flags and text */
+.flags-container {
+	padding-left: 30px;
+	font-style: italic;
+	display: flex;
+	align-items: center; /* Vertically center the items */
+	text-decoration: none;
+}
+
+/* Rainbow flag */
+.pride-flag {
+	width: 24px;
+	height: 16px;
+	background-image: linear-gradient(90deg, #FF0000 16.5%, #FF0000 16.5%, #FF7F00 16.5%, #FF7F00 16.5%, #FF7F00 33%, #FF7F00 33%, #FFFF00 33%, #FFFF00 33%, #FFFF00 49.5%, #FFFF00 49.5%, #00AA00 49.5%, #00AA00 49.5%, #00AA00 66%, #00AA00 66%, #0000FF 66%, #0000FF 66%, #0000FF 82.5%, #0000FF 82.5%, #4B0082 82.5%, #4B0082 82.5%);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+/* Transgender flag */
+.trans-flag {
+	width: 24px;
+	height: 16px;
+	background: linear-gradient(90deg, #55CDFC 20%, #55CDFC 20%, #F7A8B8 20%, #F7A8B8 20%, #F7A8B8 40%, #F7A8B8 40%, #FFFFFF 40%, #FFFFFF 40%, #FFFFFF 60%, #FFFFFF 60%,#F7A8B8 60%, #F7A8B8 60%, #F7A8B8 80%, #F7A8B8 80%, #55CDFC 80%, #55CDFC 80%);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
